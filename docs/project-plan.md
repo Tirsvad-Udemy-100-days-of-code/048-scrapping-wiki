@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | S01 | Initial version; accepted by the Product Owner's acceptance of the plan | pending |
+| 2026-10-28 | Accepted | Claude (AI) | S01 | Initial version; accepted by the Product Owner's acceptance of the plan | [b344b6e] |
 
 ---
 
@@ -100,3 +100,4 @@ A No-Go moves every later gateway, and the end date, by the time needed to fix t
 [MIL-003]: ./milestones/mil-003-screenshots-in-docker.md
 [MIL-004]: ./milestones/mil-004-readme-and-api-docs.md
 [MIL-005]: ./milestones/mil-005-wiki.md
+[b344b6e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/b344b6e2cba397e23714c73a45ad4155bb1e00e0

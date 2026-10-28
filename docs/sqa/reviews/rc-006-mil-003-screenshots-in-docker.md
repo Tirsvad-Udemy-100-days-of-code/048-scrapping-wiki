@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | [b344b6e] |
 
 ---
 
@@ -63,3 +63,4 @@ Go — Every Mandatory criterion of the type checklist and of QC-LANG-001 passes
 [MIL-003]: ../../milestones/mil-003-screenshots-in-docker.md
 [QC-MIL-001]: ../../../framework/qc/artifacts/qc-milestones-gateways.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
+[b344b6e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/b344b6e2cba397e23714c73a45ad4155bb1e00e0

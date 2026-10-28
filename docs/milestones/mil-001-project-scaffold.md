@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | [b344b6e] |
 
 ---
 
@@ -72,3 +72,4 @@ Decide whether the repository is ready for code: layout, tooling and configurati
 [BC-001]: ../business-case.md
 [SA-001]: ../stakeholder-analysis.md
 [PP-001]: ../project-plan.md
+[b344b6e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/b344b6e2cba397e23714c73a45ad4155bb1e00e0
