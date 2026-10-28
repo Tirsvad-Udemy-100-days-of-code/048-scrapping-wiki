@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review (RC-009) | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review (RC-009) | [0f7b1b1] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -55,3 +55,4 @@ Use a flat package `src/scraping_wiki/` with `constants.py` and `interaction.py`
 
 [BC-001]: ../business-case.md
 [MIL-002]: ../milestones/mil-002-interaction-script.md
+[0f7b1b1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/0f7b1b1e5c75d0f0298916fad5725fecbca3b5b4

@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | [0f7b1b1] |
 
 ---
 
@@ -52,3 +52,4 @@ Go — Every Mandatory criterion of the checklist passes; no Fail. Stand-in revi
 
 [ADR-0001]: ../../adr/adr-0001-flat-package-layout.md
 [QC-ADR-001]: ../../../framework/qc/artifacts/qc-adr.md
+[0f7b1b1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/0f7b1b1e5c75d0f0298916fad5725fecbca3b5b4
