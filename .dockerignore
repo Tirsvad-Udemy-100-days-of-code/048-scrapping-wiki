@@ -1,0 +1,16 @@
+# Secrets and local state never go into the image.
+.env
+.env.*
+.venv/
+.git/
+.gitmodules
+framework/
+results/
+docs/ai-prompts/
+docs/doxygen/
+docs/wiki/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+**/__pycache__/
+*.egg-info/

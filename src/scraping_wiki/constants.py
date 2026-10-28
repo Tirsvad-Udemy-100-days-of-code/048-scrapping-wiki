@@ -5,8 +5,13 @@
 ## @brief The Wikipedia main page that the scraper opens.
 WIKIPEDIA_MAIN_PAGE_URL: str = "https://en.wikipedia.org/wiki/Main_Page"
 
-## @brief CSS selector of the anchor inside the div whose id is `articlecount`.
-ARTICLE_COUNT_SELECTOR: str = "#articlecount a"
+## @brief The CSS selector shown in the lecture. It matched the article count when the lecture
+# was recorded; today it matches the first link, the active editors.
+LECTURE_SELECTOR: str = "#articlecount a"
+
+## @brief CSS selector of the article count link: the first anchor of the second list item
+# inside the div whose id is `articlecount`.
+ARTICLE_COUNT_SELECTOR: str = "#articlecount li:nth-of-type(2) a"
 
 ## @brief Chrome option that runs the browser without a window.
 HEADLESS_ARGUMENT: str = "--headless=new"

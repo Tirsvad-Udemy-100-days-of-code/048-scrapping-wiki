@@ -56,10 +56,11 @@ def open_main_page(driver: WebDriver) -> None:
 
 
 def read_article_count(driver: WebDriver) -> str:
-    """@brief Find the article count link with a CSS selector and return its text.
+    """@brief Find the article count link (first link of the second list item) and return its text.
 
     @param driver A driver that has the Wikipedia main page open.
-    @return The text of the anchor inside the `articlecount` div, for example `7,000,000`.
+    @return The text of the first link of the second list item in the `articlecount` div,
+        for example `7,000,000`.
     """
     article_count = driver.find_element(By.CSS_SELECTOR, ARTICLE_COUNT_SELECTOR)
     return article_count.text
