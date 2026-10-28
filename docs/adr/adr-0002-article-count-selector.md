@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review (RC-011) | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review (RC-011) | [085a66e] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -56,3 +56,4 @@ The program uses `ARTICLE_COUNT_SELECTOR = "#articlecount li:nth-of-type(2) a"` 
 [BC-001]: ../business-case.md
 [ADR-0001]: ./adr-0001-flat-package-layout.md
 [MIL-003]: ../milestones/mil-003-screenshots-in-docker.md
+[085a66e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/085a66eb52299961a02cb57553e5ccf850e9d27f

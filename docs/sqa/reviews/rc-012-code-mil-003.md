@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | pending |
+| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version: Go | [085a66e] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — Every Mandatory criterion of the checklist passes; no Fail. Stand-in revi
 
 [MIL-003]: ../../milestones/mil-003-screenshots-in-docker.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[085a66e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/085a66eb52299961a02cb57553e5ccf850e9d27f
