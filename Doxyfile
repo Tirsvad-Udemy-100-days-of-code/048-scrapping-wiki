@@ -1,0 +1,16 @@
+# Doxygen configuration for the console calculator.
+# Generate the API documentation with:  doxygen Doxyfile
+PROJECT_NAME           = "Scraping Wiki"
+PROJECT_BRIEF          = "Selenium Wikipedia scraper (Udemy 100 Days of Code)"
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = src
+FILE_PATTERNS          = *.py
+RECURSIVE              = YES
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES

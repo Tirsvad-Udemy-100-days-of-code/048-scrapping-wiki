@@ -33,11 +33,11 @@ Schedule the five phases that deliver the Selenium Wikipedia lecture of Udemy's 
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Project scaffold | [MIL-001] | 2026-10-28 | 2026-10-28 | S01 | none (technical tasks) | `pyproject.toml`, `.gitignore`, `src/` and `tests/` skeletons, `Doxyfile`, repository description and topics, `origin` corrected | not yet synced |
-| Interaction script | [MIL-002] | 2026-10-29 | 2026-10-29 | S01 | none (technical tasks) | `src/scraping_wiki/constants.py`, `interaction.py` with Doxygen comments, and unit tests | not yet synced |
-| Screenshots in Docker | [MIL-003] | 2026-10-30 | 2026-10-30 | S01 | none (technical tasks) | `Dockerfile`, `.dockerignore`, end to end (e2e) run, lecture step scripts and 7 screenshots in `docs/screenshots/` | not yet synced |
-| README and API docs | [MIL-004] | 2026-10-31 | 2026-10-31 | S01 | none (technical tasks) | `README.md` from the template with the 7 screenshots, verified Doxygen build | not yet synced |
-| Wiki in three languages | [MIL-005] | 2026-11-02 | 2026-11-02 | S01 | none (technical tasks) | `docs/wiki/` in en, da and ms with screenshots and sidebar, publish workflow | not yet synced |
+| Project scaffold | [MIL-001] | 2026-10-28 | 2026-10-28 | S01 | none (technical tasks) | `pyproject.toml`, `.gitignore`, `src/` and `tests/` skeletons, `Doxyfile`, repository description and topics, `origin` corrected | [Milestone 277] |
+| Interaction script | [MIL-002] | 2026-10-29 | 2026-10-29 | S01 | none (technical tasks) | `src/scraping_wiki/constants.py`, `interaction.py` with Doxygen comments, and unit tests | [Milestone 278] |
+| Screenshots in Docker | [MIL-003] | 2026-10-30 | 2026-10-30 | S01 | none (technical tasks) | `Dockerfile`, `.dockerignore`, end to end (e2e) run, lecture step scripts and 7 screenshots in `docs/screenshots/` | [Milestone 279] |
+| README and API docs | [MIL-004] | 2026-10-31 | 2026-10-31 | S01 | none (technical tasks) | `README.md` from the template with the 7 screenshots, verified Doxygen build | [Milestone 280] |
+| Wiki in three languages | [MIL-005] | 2026-11-02 | 2026-11-02 | S01 | none (technical tasks) | `docs/wiki/` in en, da and ms with screenshots and sidebar, publish workflow | [Milestone 281] |
 
 ```plantuml
 @startgantt
@@ -89,7 +89,6 @@ A No-Go moves every later gateway, and the end date, by the time needed to fix t
 - "Python greater than 3.13" is read as 3.13 or newer (`requires-python = ">=3.13"`), as in 010-calc.
 - S03 wants no runtime dependencies; the lecture needs Selenium, so it is the single runtime dependency (conflict recorded in [SA-001]).
 - Whether the repository is public decides whether `docs/ai-prompts/` is ignored ([ai-prompt-log.md](../framework/process/ai-prompt-log.md)); checked on 2026-10-28 through the host's API: the repository is public, so `/docs/ai-prompts/` is ignored (MIL-001).
-- Milestone links in the Gateway Schedule are filled in after the publish (until then each row says `not yet synced`).
 
 ---
 
@@ -100,4 +99,9 @@ A No-Go moves every later gateway, and the end date, by the time needed to fix t
 [MIL-003]: ./milestones/mil-003-screenshots-in-docker.md
 [MIL-004]: ./milestones/mil-004-readme-and-api-docs.md
 [MIL-005]: ./milestones/mil-005-wiki.md
+[Milestone 277]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/277
+[Milestone 278]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/278
+[Milestone 279]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/279
+[Milestone 280]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/280
+[Milestone 281]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/281
 [b344b6e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/b344b6e2cba397e23714c73a45ad4155bb1e00e0
