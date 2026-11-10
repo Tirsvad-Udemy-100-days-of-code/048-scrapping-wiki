@@ -11,8 +11,8 @@ mkdir -p "$results/screenshots"
 status=0
 
 {
-  python -m pytest tests/e2e -p no:cacheprovider --override-ini="addopts=" -q || status=$?
-  python tests/e2e/capture_screenshots.py "$results/screenshots" || status=$?
+	python -m pytest tests/e2e -p no:cacheprovider --override-ini="addopts=" -q || status=$?
+	python tests/e2e/capture_screenshots.py "$results/screenshots" || status=$?
 } >"$results/e2e.log" 2>&1
 
 cat "$results/e2e.log"
