@@ -12,7 +12,8 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Claude (AI) | S01 | Initial version; accepted by the Product Owner's acceptance of the plan | [b344b6e] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-006 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain, the live-site rule and the shared wiki workflow in the Planning Assumptions and Open Issues; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-006 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain, the live-site rule and the shared wiki workflow in the Planning Assumptions and Open Issues; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the indentation of `tests/e2e/run_e2e.sh` to the main deliverable of MIL-006; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -41,7 +42,7 @@ Schedule the five phases that deliver the Selenium Wikipedia lecture of Udemy's 
 | Screenshots in Docker | [MIL-003] | 2026-10-30 | 2026-10-30 | S01 | none (technical tasks) | `Dockerfile`, `.dockerignore`, end to end (e2e) run, lecture step scripts and 7 screenshots in `docs/screenshots/` | [Milestone 279] |
 | README and API docs | [MIL-004] | 2026-10-31 | 2026-10-31 | S01 | none (technical tasks) | `README.md` from the template with the 7 screenshots, verified Doxygen build | [Milestone 280] |
 | Wiki in three languages | [MIL-005] | 2026-11-02 | 2026-11-02 | S01 | none (technical tasks) | `docs/wiki/` in en, da and ms with screenshots and sidebar, publish workflow | [Milestone 281] |
-| Framework baseline | [MIL-006] | 2026-11-16 to 2026-11-23 | 2026-11-23 | S01 | none (technical tasks) | Branch `mil-006-framework-baseline` merged: the adopted framework release, the wiki in the framework's shape, the README, licence and project URL metadata, the traceability matrix and review records | [Milestone 565] |
+| Framework baseline | [MIL-006] | 2026-11-16 to 2026-11-23 | 2026-11-23 | S01 | none (technical tasks) | Branch `mil-006-framework-baseline` merged: the adopted framework release, the wiki in the framework's shape, the README, licence and project URL metadata, the traceability matrix, review records and the indentation of the end to end shell script | [Milestone 565] |
 
 ```plantuml
 @startgantt

@@ -12,7 +12,8 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | [b344b6e] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 8, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 8, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `tests/e2e/run_e2e.sh` (indentation) so the shell format check passes; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -47,11 +48,11 @@ A finished reference solution for the lecture that others can run and compare ag
 
 ### In Scope
 
-Python package under `src/`, tests under `tests/`, documentation under `docs/` (screenshots, wiki, Doxygen), `pyproject.toml`, `Doxyfile`, Python `.gitignore`, Dockerfile for the screenshot and end-to-end run, README, wiki in three languages, repository description and topics. The baseline milestone [MIL-006]: the framework release, the wiki in the framework's shape (sidebar without a Related section, language line first on each page), the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and a traceability matrix. It changes no behaviour of the program.
+Python package under `src/`, tests under `tests/`, documentation under `docs/` (screenshots, wiki, Doxygen), `pyproject.toml`, `Doxyfile`, Python `.gitignore`, Dockerfile for the screenshot and end-to-end run, README, wiki in three languages, repository description and topics. The baseline milestone [MIL-006]: the framework release, the wiki in the framework's shape (sidebar without a Related section, language line first on each page), the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and a traceability matrix. It changes no behaviour of the program; its only other change is the indentation of `tests/e2e/run_e2e.sh` so the shell format check of the Validate workflow passes (task 6).
 
 ### Out of Scope
 
-Clicking links and typing into search fields (later lectures), other websites, a graphical or web interface of our own, packaging for PyPI, testing the GUI on the host desktop, reading or testing the `.env` file, and any change to `src/` or `tests/` in the baseline milestone [MIL-006]. That milestone opens no web page, starts no browser and runs no container; the unit tests use a fake driver.
+Clicking links and typing into search fields (later lectures), other websites, a graphical or web interface of our own, packaging for PyPI, testing the GUI on the host desktop, reading or testing the `.env` file, and any change to `src/` or `tests/` in the baseline milestone [MIL-006]; its only change of a test file is the indentation of `tests/e2e/run_e2e.sh` (task 6). That milestone opens no web page, starts no browser and runs no container; the unit tests use a fake driver.
 
 ## Expected Benefits
 
@@ -89,7 +90,7 @@ Supports completing the Python Pro Bootcamp with reviewed, portfolio-quality pro
 | Token in `.env` leaks | Account compromise | `.env` stays git-ignored, is used only by personal tooling and is never read, tested or imported by the project |
 | Running Selenium on the host desktop takes the user's mouse and keyboard | Interrupted work | GUI runs only in Docker, as `framework/process/gui-testing.md` requires |
 | Translations drift from the English text | Inconsistent wiki | English is authoritative; same page set in all languages; `check-languages.sh` |
-| The documents of the baseline milestone [MIL-006] change documents that were accepted earlier, and the AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` and `tests/` are not changed, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
+| The documents of the baseline milestone [MIL-006] change documents that were accepted earlier, and the AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` is not changed, `tests/` only in the indentation of `run_e2e.sh`, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 

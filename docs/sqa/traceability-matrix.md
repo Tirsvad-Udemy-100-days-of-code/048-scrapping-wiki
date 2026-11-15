@@ -4,12 +4,13 @@
 | Key | Value |
 | --- | --- |
 | ID | TM-001 |
-| CrossReference | [BC-001], [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006], [ADR-0001], [ADR-0002], [RC-001], [RC-002], [RC-003], [RC-004], [RC-005], [RC-006], [RC-007], [RC-008], [RC-009], [RC-010], [RC-011], [RC-012], [RC-013], [RC-014], [RC-015], [RC-016] |
+| CrossReference | [BC-001], [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006], [ADR-0001], [ADR-0002], [RC-001], [RC-002], [RC-003], [RC-004], [RC-005], [RC-006], [RC-007], [RC-008], [RC-009], [RC-010], [RC-011], [RC-012], [RC-013], [RC-014], [RC-015], [RC-016], [RC-017], [RC-018], [RC-019] |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | [915cba5] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | [915cba5] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-017 to RC-019 of BC-001, PP-001 and MIL-006 for task 6; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -21,15 +22,15 @@ Tracks backward and forward links between the artifact instances of Scraping Wik
 
 | Artifact Instance | Type | Language | Domain | Upstream (Backward Link) | Downstream (Forward Link) | Last Reviewed (RC-ID) |
 | --- | --- | --- | --- | --- | --- | --- |
-| [BC-001] | BC | en | education | - | [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006] | [RC-013], [RC-001] |
+| [BC-001] | BC | en | education | - | [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006] | [RC-017] (Go, re-review after task 6), [RC-013], [RC-001] |
 | [SA-001] | SA | en | it | [BC-001] | [PP-001] | [RC-002] |
-| [PP-001] | PP | en | education | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006] | [RC-014], [RC-003] |
+| [PP-001] | PP | en | education | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006] | [RC-018] (Go, re-review after task 6), [RC-014], [RC-003] |
 | [MIL-001] | MIL | en | it | [BC-001], [PP-001] | [MIL-002] | [RC-004] |
 | [MIL-002] | MIL | en | it | [BC-001], [PP-001], [MIL-001] | [MIL-003] | [RC-005], [RC-010] |
 | [MIL-003] | MIL | en | it | [BC-001], [PP-001], [MIL-002] | [MIL-004] | [RC-006], [RC-012] |
 | [MIL-004] | MIL | en | it | [BC-001], [PP-001], [MIL-003] | [MIL-005] | [RC-007] |
 | [MIL-005] | MIL | en | it | [BC-001], [PP-001], [MIL-004] | [MIL-006] | [RC-008] |
-| [MIL-006] | MIL | en | education | [BC-001], [PP-001], [MIL-005] | - | [RC-015] |
+| [MIL-006] | MIL | en | education | [BC-001], [PP-001], [MIL-005] | - | [RC-019] (Go, re-review after task 6), [RC-015] |
 | [ADR-0001] | ADR | - | - | [BC-001], [MIL-002] | - | [RC-009] |
 | [ADR-0002] | ADR | - | - | [BC-001], [MIL-002] | - | [RC-011] |
 | Wiki | Wiki | en, da, ms | education | [BC-001], [MIL-006] | - | [RC-016], [RC-008] |
@@ -58,7 +59,7 @@ Tracks backward and forward links between the artifact instances of Scraping Wik
 - This matrix was created with [MIL-006]; until then the project had no traceability matrix.
 - The wiki (`docs/wiki/`) is documentation, not an artifact with an ID or a Language and Domain row; it has its own review record, [RC-016], and was reviewed for its content as part of [RC-008].
 - The domain of [BC-001], [PP-001], [MIL-006] and the wiki is `education` since [MIL-006]. The other documents keep the domain `it` they were accepted with; a change of their domain would need a new review of each (see the Open Issues of [PP-001]). The ADRs have no Language and Domain rows.
-- [MIL-006] changes no source or test file. The review records RC-010 and RC-012 review the code of MIL-002 and MIL-003 (listed with their milestone). No view or test-plan artifact exists (the scope excludes them), so the milestones' Go/No-Go criteria are the quality checks.
+- [MIL-006] changes no source file; its task 6 changes only the indentation of the test script `tests/e2e/run_e2e.sh`, checked by the shell format check of the Validate workflow. The review records RC-010 and RC-012 review the code of MIL-002 and MIL-003 (listed with their milestone). No view or test-plan artifact exists (the scope excludes them), so the milestones' Go/No-Go criteria are the quality checks.
 
 ---
 
@@ -90,3 +91,6 @@ Tracks backward and forward links between the artifact instances of Scraping Wik
 [RC-015]: ./reviews/rc-015-milestone-006.md
 [RC-016]: ./reviews/rc-016-wiki.md
 [915cba5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/915cba58cb9ea86be0193540eb965d78f4862548
+[RC-017]: ./reviews/rc-017-business-case-task-6.md
+[RC-018]: ./reviews/rc-018-project-plan-task-6.md
+[RC-019]: ./reviews/rc-019-milestone-006-task-6.md
