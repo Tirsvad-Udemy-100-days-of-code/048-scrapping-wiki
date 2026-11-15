@@ -1,6 +1,6 @@
-# Persediaan dan Jalankan
-
 🌐 [English](Setup-and-Run) · [Dansk](Setup-and-Run-da) · **Bahasa Malaysia**
+
+# Persediaan dan Jalankan
 
 ## Keperluan
 

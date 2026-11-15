@@ -1,6 +1,6 @@
-# Lecture Steps
-
 🌐 **English** · [Dansk](Lecture-Steps-da) · [Bahasa Malaysia](Lecture-Steps-ms)
+
+# Lecture Steps
 
 The lecture builds `interaction.py` in seven steps. Each step below has its screenshot, the code as it stands after the step, and what we gained.
 

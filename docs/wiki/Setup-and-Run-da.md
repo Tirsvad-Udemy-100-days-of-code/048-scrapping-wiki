@@ -1,6 +1,6 @@
-# Opsætning og kørsel
-
 🌐 [English](Setup-and-Run) · **Dansk** · [Bahasa Malaysia](Setup-and-Run-ms)
+
+# Opsætning og kørsel
 
 ## Krav
 

@@ -1,6 +1,6 @@
-# Scraping Wiki
-
 🌐 **English** · [Dansk](Home-da) · [Bahasa Malaysia](Home-ms)
+
+# Scraping Wiki
 
 A small Python project from Udemy's *100 Days of Code: The Complete Python Pro Bootcamp*. It drives Chrome with Selenium, opens the Wikipedia main page and prints the article count. This wiki explains what each lecture step taught, with a screenshot of each step.
 
