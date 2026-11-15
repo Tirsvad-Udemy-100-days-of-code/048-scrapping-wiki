@@ -1,6 +1,6 @@
-# Lektionens trin
-
 🌐 [English](Lecture-Steps) · **Dansk** · [Bahasa Malaysia](Lecture-Steps-ms)
+
+# Lektionens trin
 
 Lektionen bygger `interaction.py` i syv trin. Hvert trin nedenfor har sit skærmbillede, koden som den ser ud efter trinnet og det, vi lærte.
 

@@ -4,14 +4,16 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | [SA-001] |
+| CrossReference | [SA-001], [PP-001], [MIL-006] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | [b344b6e] |
+| 2026-10-28 | Deprecated | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | [b344b6e] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 8, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `tests/e2e/run_e2e.sh` (indentation) so the shell format check passes; reviewed in autonomous mode, not independent | [11aeac1] |
 
 ---
 
@@ -40,16 +42,17 @@ A finished reference solution for the lecture that others can run and compare ag
 5. Provide a wiki in English, Danish and Bahasa Malaysia that explains what each lecture step taught.
 6. Provide a README from the framework template with instructions to create and use a local `.venv`, upgrade pip, run the project and run its tests.
 7. Set the description and topics on the git host repository.
+8. Bring the finished project to the common baseline of the framework: the adopted framework release, a wiki that follows the framework's sidebar and language-line rules, licence and project URL metadata, a README that lists only the documents of the repository, a traceability matrix and review records for every changed document ([MIL-006]).
 
 ## Scope
 
 ### In Scope
 
-Python package under `src/`, tests under `tests/`, documentation under `docs/` (screenshots, wiki, Doxygen), `pyproject.toml`, `Doxyfile`, Python `.gitignore`, Dockerfile for the screenshot and end-to-end run, README, wiki in three languages, repository description and topics.
+Python package under `src/`, tests under `tests/`, documentation under `docs/` (screenshots, wiki, Doxygen), `pyproject.toml`, `Doxyfile`, Python `.gitignore`, Dockerfile for the screenshot and end-to-end run, README, wiki in three languages, repository description and topics. The baseline milestone [MIL-006]: the framework release, the wiki in the framework's shape (sidebar without a Related section, language line first on each page), the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and a traceability matrix. It changes no behaviour of the program; its only other change is the indentation of `tests/e2e/run_e2e.sh` so the shell format check of the Validate workflow passes (task 6).
 
 ### Out of Scope
 
-Clicking links and typing into search fields (later lectures), other websites, a graphical or web interface of our own, packaging for PyPI, testing the GUI on the host desktop, reading or testing the `.env` file.
+Clicking links and typing into search fields (later lectures), other websites, a graphical or web interface of our own, packaging for PyPI, testing the GUI on the host desktop, reading or testing the `.env` file, and any change to `src/` or `tests/` in the baseline milestone [MIL-006]; its only change of a test file is the indentation of `tests/e2e/run_e2e.sh` (task 6). That milestone opens no web page, starts no browser and runs no container; the unit tests use a fake driver.
 
 ## Expected Benefits
 
@@ -76,6 +79,7 @@ Supports completing the Python Pro Bootcamp with reviewed, portfolio-quality pro
 | 5 | Setup is reproducible | README steps work on a clean `.venv` | Manual run of the README |
 | 6 | Runtime dependencies | Exactly one: `selenium` | `pyproject.toml` |
 | 7 | Repository metadata | Description and at least 5 topics set | Git host API (application programming interface) response |
+| 8 | The baseline milestone is done (objective 8) | The wiki has the framework's shape and a review record, `framework/scripts/check-readme.sh`, `check-languages.sh` and `check-editorconfig.sh` exit with code 0, `python -m pytest` passes, 100 % of the continuous integration (CI) checks of the pull request of [MIL-006] pass | Files in `docs/`, the script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -86,6 +90,7 @@ Supports completing the Python Pro Bootcamp with reviewed, portfolio-quality pro
 | Token in `.env` leaks | Account compromise | `.env` stays git-ignored, is used only by personal tooling and is never read, tested or imported by the project |
 | Running Selenium on the host desktop takes the user's mouse and keyboard | Interrupted work | GUI runs only in Docker, as `framework/process/gui-testing.md` requires |
 | Translations drift from the English text | Inconsistent wiki | English is authoritative; same page set in all languages; `check-languages.sh` |
+| The documents of the baseline milestone [MIL-006] change documents that were accepted earlier, and the AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` is not changed, `tests/` only in the indentation of `run_e2e.sh`, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -98,8 +103,9 @@ Supports completing the Python Pro Bootcamp with reviewed, portfolio-quality pro
 
 - Python 3.13 or newer, `venv`, `pytest`, folders `src/`, `tests/`, `docs/`, constants in `constants.py`, Doxygen comments and a `Doxyfile`.
 - Runtime dependencies only where needed: `selenium` is the one the lecture requires.
-- Product Owner language English, domain IT; wiki in English, Danish and Bahasa Malaysia.
+- The Product Owner (PO) language is English and the PO domain is education (it was IT until [MIL-006]; the documents that [MIL-006] does not change keep the domain `it`, see the Open Issues of [PP-001]); wiki in English, Danish and Bahasa Malaysia.
 - No GUI or browser test on the host desktop.
+- The baseline milestone [MIL-006] starts 2026-11-16 and is finished within one week, by 2026-11-23. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
 
 ## Cost–Benefit Assessment
 
@@ -125,3 +131,7 @@ Proceed — the scope is small, the cost is low and it completes the lecture wit
 
 [SA-001]: ./stakeholder-analysis.md
 [b344b6e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/b344b6e2cba397e23714c73a45ad4155bb1e00e0
+[PP-001]: ./project-plan.md
+[MIL-006]: ./milestones/mil-006-framework-baseline.md
+[915cba5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/915cba58cb9ea86be0193540eb965d78f4862548
+[11aeac1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/11aeac167a980ba36378ec10a6d25d4fcbf541a7

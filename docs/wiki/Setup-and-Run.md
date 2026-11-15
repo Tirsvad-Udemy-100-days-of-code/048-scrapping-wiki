@@ -1,6 +1,6 @@
-# Setup and Run
-
 🌐 **English** · [Dansk](Setup-and-Run-da) · [Bahasa Malaysia](Setup-and-Run-ms)
+
+# Setup and Run
 
 ## Requirements
 

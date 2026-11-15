@@ -1,6 +1,6 @@
-# Langkah Kuliah
-
 🌐 [English](Lecture-Steps) · [Dansk](Lecture-Steps-da) · **Bahasa Malaysia**
+
+# Langkah Kuliah
 
 Kuliah membina `interaction.py` dalam tujuh langkah. Setiap langkah di bawah mempunyai tangkapan skrinnya, kod selepas langkah itu dan apa yang kita dapat.
 

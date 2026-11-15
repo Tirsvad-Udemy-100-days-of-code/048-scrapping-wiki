@@ -26,6 +26,10 @@ The lecture builds `interaction.py` in seven steps: create the file, import Sele
 | `docs/lecture-steps/` | The code of each lecture step, as built up in the lecture |
 | `docs/screenshots/` | One screenshot per lecture step |
 | `Dockerfile` | Headless Chromium for the end to end run |
+| `Doxyfile` | Configuration for the Doxygen API documentation |
+| `framework/` | The SQA and QC framework (a git submodule) that the project documents follow |
+| `.editorconfig` | The editor settings of the framework baseline |
+| `.env.example` | Placeholders for the git host tokens that the framework scripts read, and the optional settings of the program (`CHROME_BINARY`, `CHROMEDRIVER_PATH`), which it reads from the process environment and not from a `.env` file |
 
 ### The lecture steps
 
@@ -105,6 +109,8 @@ scraping-wiki --headless
 
 The output is one line, for example `7,256,081`.
 
+The program opens the real Wikipedia main page. It submits nothing and needs no account. Read the terms of use of a site before you run a program against it.
+
 ## 🧪 Tests
 
 The unit tests start no browser:
@@ -135,7 +141,7 @@ doxygen Doxyfile
 
 ## 📄 License
 
-[GNU Affero General Public License v3.0][license].
+The project is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later); see the [LICENSE][license] file.
 
 ## 🔗 Links
 
@@ -149,7 +155,6 @@ The documents a newcomer needs, in reading order.
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
@@ -157,8 +162,7 @@ The documents a newcomer needs, in reading order.
 | [Architecture decisions][adr] | Why the layout is flat and why the selector changed |
 | [Review records][reviews] | The review of each document and of the code |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
+| [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
 
 ---
 
@@ -170,7 +174,6 @@ The documents a newcomer needs, in reading order.
 [docker]: https://docs.docker.com/get-docker/
 [doxygen]: https://www.doxygen.nl/
 [ADR-0002]: ./docs/adr/adr-0002-article-count-selector.md
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
@@ -178,5 +181,4 @@ The documents a newcomer needs, in reading order.
 [adr]: ./docs/adr/
 [reviews]: ./docs/sqa/reviews/
 [registry]: ./docs/artifact-registry.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
+[TM-001]: ./docs/sqa/traceability-matrix.md
