@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | [915cba5] |
 
 ---
 
@@ -89,3 +89,4 @@ Tracks backward and forward links between the artifact instances of Scraping Wik
 [RC-014]: ./reviews/rc-014-project-plan-baseline.md
 [RC-015]: ./reviews/rc-015-milestone-006.md
 [RC-016]: ./reviews/rc-016-wiki.md
+[915cba5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/915cba58cb9ea86be0193540eb965d78f4862548
