@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | [915cba5] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-017 to RC-019 of BC-001, PP-001 and MIL-006 for task 6; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-017 to RC-019 of BC-001, PP-001 and MIL-006 for task 6; reviewed in autonomous mode, not independent | [11aeac1] |
 
 ---
 
@@ -94,3 +94,4 @@ Tracks backward and forward links between the artifact instances of Scraping Wik
 [RC-017]: ./reviews/rc-017-business-case-task-6.md
 [RC-018]: ./reviews/rc-018-project-plan-task-6.md
 [RC-019]: ./reviews/rc-019-milestone-006-task-6.md
+[11aeac1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/11aeac167a980ba36378ec10a6d25d4fcbf541a7

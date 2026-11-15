@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Claude (AI) | AI as stand-in for S01 | Initial version; accepted after a Go review | [b344b6e] |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 8, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `tests/e2e/run_e2e.sh` (indentation) so the shell format check passes; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `tests/e2e/run_e2e.sh` (indentation) so the shell format check passes; reviewed in autonomous mode, not independent | [11aeac1] |
 
 ---
 
@@ -134,3 +134,4 @@ Proceed — the scope is small, the cost is low and it completes the lecture wit
 [PP-001]: ./project-plan.md
 [MIL-006]: ./milestones/mil-006-framework-baseline.md
 [915cba5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/915cba58cb9ea86be0193540eb965d78f4862548
+[11aeac1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/11aeac167a980ba36378ec10a6d25d4fcbf541a7

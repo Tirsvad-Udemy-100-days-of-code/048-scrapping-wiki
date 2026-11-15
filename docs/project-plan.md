@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Claude (AI) | S01 | Initial version; accepted by the Product Owner's acceptance of the plan | [b344b6e] |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-006 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain, the live-site rule and the shared wiki workflow in the Planning Assumptions and Open Issues; set the domain to education; reviewed in autonomous mode, not independent | [915cba5] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the indentation of `tests/e2e/run_e2e.sh` to the main deliverable of MIL-006; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the indentation of `tests/e2e/run_e2e.sh` to the main deliverable of MIL-006; reviewed in autonomous mode, not independent | [11aeac1] |
 
 ---
 
@@ -122,3 +122,4 @@ A No-Go moves every later gateway, and the end date, by the time needed to fix t
 [MIL-006]: ./milestones/mil-006-framework-baseline.md
 [Milestone 565]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/milestone/565
 [915cba5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/915cba58cb9ea86be0193540eb965d78f4862548
+[11aeac1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-scrapping-wiki/commit/11aeac167a980ba36378ec10a6d25d4fcbf541a7
